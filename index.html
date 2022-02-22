@@ -9,94 +9,100 @@
           Any other head element should come after these tags.
           -->
         <!-- this is how you formata an HTML comment -->
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
         <!-- Link to an external CSS file -->
         <link rel="stylesheet" href="styles.css">
 
         <title> Alice's Big Fat Restauraunt!!!</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="Menu">Menu</a></li>
-          <li><a href="Hours">Hours</a></li>
-          <li><a href="Location">Location</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <div class="Tagline">
-      <h1>You can have anything you want....and more...;)</h1>
-    </div>
+    <div class="Landing">
+      <div class="Sign">
+        <h1>alice's Restauraunt</h1>
+        <p>You can have anything you want</p>
+      </div>
 
-    <div class="Logo">
-      <img src="images/table-food.png" alt="Alice's Restauraunt logo">
-    </div>
-
-    <div class="Hours">
-      <h3>Hours</h3>
-      <p>7am to 10pm everyday</p>
-    </div>
-
-    <div class="Menu" id="menu">
-      <ul>
-        <li>Collards 9.99</li>
-        <li>Biscuits 11.22</li>
-        <li>Rice 11.22</li>
-        <li>Beans 2.00</li>
-      </ul>
-    </div>
-
-    <div class="Address" id="location">
-      <address>
-        123 Fakestreet
-        Anytown
-        Anywhere
-      </address>
     </div>
 
     <div class="Testimonials">
-      <ul>
+      <div class="Testimonial">
+        <img src="images/woman.png" alt>
+        <p class="name"> Emma Goldman</p>
+        <p class="review"> It was food, great...</p>
+      </div>
 
-        <li class="testimonial">
-          <img src="images/woman.png">
-          <p class="name">Malicia Jackson</p>
-          <p>I had some food and it was bangers mate</p>
-        </li>
+      <div class="Testimonial">
+        <img src="images/woman.png" alt>
+        <p class="name"> Emma Goldman</p>
+        <p class="review"> It was food, great...</p>
+      </div>
 
-        <li class="testimonial">
-          <img src="images/woman.png">
-          <p class="name">Malicia Jackson</p>
-          <p>I had some food and it was bangers mate</p>
-        </li>
-
-        <li class="testimonial">
-          <img src="images/woman.png">
-          <p class="name">Malicia Jackson</p>
-          <p>I had some food and it was bangers mate</p>
-        </li>
-      </ul>
+      <div class="Testimonial">
+        <img src="images/woman.png" alt>
+        <p class="name"> Emma Goldman</p>
+        <p class="review"> It was food, great...</p>
+      </div>
     </div>
 
-    <div class="Blog">
+    <div class="Menu">
+      <h2>menu</h2>
+      <ol>
+        <li>
+          <h3>SPECIAL #1: BIG FAT NUGGS</h3>
+          <p>Holy cow! these ARE chicken nuggets</p>
+        </li>
+        <li>
+          <h3>SPECIAL #2: BELIEVE ME THIS IS PIZZA</h3>
+          <p>It truely is round and flat</p>
+        </li>
+        <li>
+          <h3>SPECIAL #3: HOT DOGS....i guess</h3>
+          <p>We had to have a 3rd special and I was running out of things I know how to cook</p>
+        </li>
+      </ol>
+    </div>
 
-      <a href="https://google.com">Blog</a>
+    <div class="Information">
+      <div class="Location">
+        <h3>Location</h3>
+        <address>
+          123 Fakestreet
+            Anytown
+              Anywhere
+        </address>
+      </div>
+      <div class="About">
+        <h3>About</h3>
+        <p>
+          We make 'food' you 'eat' it, at Alice's we're always food, all the time!
+        </p>
+      </div>
 
     </div>
 
+    <div class="Contact">
+      <form action="/my-handling-form-page" method="post">
+
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" placeholder="Type Your Name">
+        </div>
+
+        <div>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_mail" placeholder="Type Your Email">
+        </div>
+
+        <div>
+          <label for="msg">What's up?:</label>
+          <input type="text" id="msg" name="user_message" placeholder="Type Your Message"></textarea>
+        </div>
+      </form>
+    </div>
     <footer>
-      &copy; Alice's Restauraunt
+      <p><strong>unite</strong> for adiquate food</p>
     </footer>
-
-    <script>
-      console.log("this will print to the JavaScript console");
-
-      console.log("remember to put the script tages in the body!");
-
-      console.log("this should say the tagline" + document.getElementsByClassName("Tagline"));
-    </script>
-
 
   </body>
 
